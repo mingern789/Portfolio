@@ -228,7 +228,7 @@
 			$.ajax({      	
 
 		      type: "POST",
-		      url: "inc/sendEmail.php",
+		      url: "https://formsubmit.co/krrmol99@hotmail.com",
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 
