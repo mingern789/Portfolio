@@ -33,6 +33,10 @@
       href="https://fonts.googleapis.com/css?family=Nunito+Sans"
     />
     <style>
+      .ml-1 {
+        margin-left: 1rem;
+      }
+
       .tags.svelte-fue1fc {
         gap: 0.3rem;
         margin-bottom: 4rem;
@@ -89,7 +93,7 @@
     <link rel="icon" type="image/png" href="github-icon.png" />
   </head>
 
-  <body id="top">
+  <body id="top" onload="checkForm()">
     <!-- header 
    ================================================== -->
     <header>
@@ -101,7 +105,8 @@
         <nav>
           <a class="smoothscroll" href="#about">About</a>
           <!-- <a class="smoothscroll" href="#experience">Experience</a> -->
-		  <a class="smoothscroll" href="#resume-section">Resume</a>
+          <a class="smoothscroll" href="#resume-section">Resume</a>
+          <a class="smoothscroll" href="#experience">Experience</a>
           <a class="smoothscroll" href="#contact">Contact</a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -137,9 +142,23 @@
 	   				<span>UI/UX Designer</span>  -->
             </p>
 
-            <a class="button stroke smoothscroll" href="#resume-section" title=""
-              >View Resume</a
-            >
+            <a
+              class="button stroke smoothscroll"
+              href="#resume-section"
+              title=""
+              >View Resume<i
+                style="
+                  display: inline-block;
+                  font-family: fontAwesome;
+                  font-size: inherit;
+                  line-height: inherit;
+                  text-align: center;
+                  position: relative;
+                  left: 1.2rem;
+                "
+                class="fa fa-angle-down"
+              ></i
+            ></a>
             <a class="button stroke smoothscroll" href="#contact" title=""
               >Contact Me
               <i
@@ -153,9 +172,8 @@
                   left: 1.2rem;
                 "
                 class="fa fa-angle-down"
-              ></i
-            >
-		</a>
+              ></i>
+            </a>
           </div>
         </div>
       </div>
@@ -413,7 +431,6 @@
           <!-- /skill-bars -->
         </div>
       </div>
-
     </section>
     <!-- /process-->
 
@@ -433,17 +450,27 @@
         </div>
       </div>
       <!-- /section-intro-->
-      <div class="row button-section" style="margin-bottom:4rem">
+      <div class="row button-section" style="margin-bottom: 4rem">
         <div class="col-twelve">
-          <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-          <a href="pierce-resume.pdf" title="Download Resume" class="button button-primary" download>Download Resume</a>
-        </div>   		
+          <a href="#contact" title="Hire Me" class="button stroke smoothscroll"
+            >Hire Me</a
+          >
+          <a
+            href="pierce-resume.pdf"
+            title="Download Resume"
+            class="button button-primary"
+            download
+            >Download Resume</a
+          >
+        </div>
       </div>
-      <div class="row resume-timeline">	
-		  <div style="display:flex;justify-content:center">
-		<img style="max-width: 21cm;
-		max-height: 29.7cm;width:90%" src="images/pierce-resume_page-0001.jpg"> 
-		</div>  
+      <div class="row resume-timeline">
+        <div style="display: flex; justify-content: center">
+          <img
+            style="max-width: 21cm; max-height: 29.7cm; width: 90%"
+            src="images/pierce-resume_page-0001.jpg"
+          />
+        </div>
         <!-- <div class="col-twelve resume-header">
           <h2>Work Experience</h2>
         </div> -->
@@ -612,263 +639,434 @@
     <!-- Portfolio Section
    ================================================== -->
 
-   <!-- <a id="experience"></a>
+    <a id="experience"></a>
     <section id="portfolio">
-      <div  class="row section-intro">
+      <div class="row section-intro">
         <div class="col-twelve">
           <h5>Experience</h5>
           <h1>Check Out Some of My Works.</h1>
 
           <p class="lead">
-            Lorem ipsum Do commodo in proident enim in dolor cupidatat
-            adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem
-            ipsum Consectetur ut in in eu do.
+            I have industry experience working as a web developer, here are some
+            of my own works and projects I collaborated on.
           </p>
         </div>
       </div>
-      
 
       <div class="row portfolio-content">
         <div class="col-twelve">
-          
           <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
             <div class="bgrid folio-item">
               <div class="item-wrap">
-                <img src="images/portfolio/liberty.jpg" alt="Liberty" />
+                <img src="images/pathforge.webp" alt="Pathforge main page" />
                 <a href="#modal-01" class="overlay">
                   <div class="folio-item-table">
                     <div class="folio-item-cell">
-                      <h3 class="folio-title">Liberty</h3>
-                      <span class="folio-types"> Graphic Design </span>
+                      <h3 class="folio-title">Pathforge</h3>
+                      <span class="folio-types"> with pathforge team </span>
                     </div>
                   </div>
                 </a>
               </div>
             </div>
-           
 
             <div class="bgrid folio-item">
               <div class="item-wrap">
-                <img src="images/portfolio/shutterbug.jpg" alt="Shutterbug" />
+                <img src="images/menubase.webp" alt="Menubase website" />
                 <a href="#modal-02" class="overlay">
                   <div class="folio-item-table">
                     <div class="folio-item-cell">
-                      <h3 class="folio-title">Shutterbug</h3>
-                      <span class="folio-types"> Web Design </span>
+                      <h3 class="folio-title">Menubase</h3>
+                      <span class="folio-types"> with menubase team </span>
                     </div>
                   </div>
                 </a>
               </div>
             </div>
-            
 
             <div class="bgrid folio-item">
               <div class="item-wrap">
-                <img src="images/portfolio/clouds.jpg" alt="Clouds" />
+                <img src="images/limitd.PNG" alt="Limitd website" />
                 <a href="#modal-03" class="overlay">
                   <div class="folio-item-table">
                     <div class="folio-item-cell">
-                      <h3 class="folio-title">Clouds</h3>
-                      <span class="folio-types"> Web Design </span>
+                      <h3 class="folio-title">Limitd</h3>
+                      <span class="folio-types"> with limitd team </span>
                     </div>
                   </div>
                 </a>
               </div>
             </div>
-            
 
             <div class="bgrid folio-item">
               <div class="item-wrap">
-                <img src="images/portfolio/beetle.jpg" alt="Beetle" />
+                <img src="images/thcwebsite.PNG" alt="THC Website" />
                 <a href="#modal-04" class="overlay">
                   <div class="folio-item-table">
                     <div class="folio-item-cell">
-                      <h3 class="folio-title">Beetle</h3>
-                      <span class="folio-types"> Branding </span>
+                      <h3 class="folio-title">The Hacker Collective Website</h3>
+                      <span class="folio-types"> with THC team </span>
                     </div>
                   </div>
                 </a>
               </div>
             </div>
-            
 
             <div class="bgrid folio-item">
               <div class="item-wrap">
-                <img src="images/portfolio/lighthouse.jpg" alt="Lighthouse" />
+                <img src="images/hangman.PNG" alt="Hangman Game" />
                 <a href="#modal-05" class="overlay">
                   <div class="folio-item-table">
                     <div class="folio-item-cell">
-                      <h3 class="folio-title">Lighthouse</h3>
-                      <span class="folio-types"> Web Development </span>
+                      <h3 class="folio-title">Hangman Game</h3>
+                      <span class="folio-types"> by myself </span>
                     </div>
                   </div>
                 </a>
               </div>
             </div>
-            
 
             <div class="bgrid folio-item">
               <div class="item-wrap">
-                <img src="images/portfolio/salad.jpg" alt="Salad" />
+                <img
+                  style="height: 25rem"
+                  src="images/react-crud-app.PNG"
+                  alt="React CRUD App"
+                />
                 <a href="#modal-06" class="overlay">
                   <div class="folio-item-table">
                     <div class="folio-item-cell">
-                      <h3 class="folio-title">Salad</h3>
-                      <span class="folio-types"> Branding </span>
+                      <h3 class="folio-title">React CRUD App</h3>
+                      <span class="folio-types"> by myself </span>
                     </div>
                   </div>
                 </a>
               </div>
             </div>
-            
 
-            
             <div id="modal-01" class="popup-modal slider mfp-hide">
               <div class="media">
-                <img src="images/portfolio/modals/m-liberty.jpg" alt="" />
+                <img src="images/pathforge.webp" alt="" />
               </div>
 
               <div class="description-box">
-                <h4>Liberty</h4>
+                <h4>Pathforge</h4>
                 <p>
-                  Proin gravida nibh vel velit auctor aliquet. Aenean
-                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                  ipsum, nec sagittis sem nibh id elit.
+                  An e-learning site that aims to redefine the self learning
+                  experience. It provides a community for online learners to
+                  help each other out and step through the materials together.
                 </p>
 
-                <div class="categories">Web Development</div>
+                <div
+                  class="tags flex flex-wrap justify-start svelte-fue1fc"
+                  style="margin-bottom: 0"
+                >
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    vue
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    buefy
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    graphql
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    hasura
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    postgresql
+                  </h4>
+                </div>
               </div>
 
               <div class="link-box">
-                <a href="http://www.behance.net">Details</a>
+                <a href="https://pathforge.co/" target="_blank"
+                  >Link<i class="fa fa-external-link ml-1"></i
+                ></a>
                 <a href="#" class="popup-modal-dismiss">Close</a>
               </div>
             </div>
-            
 
             <div id="modal-02" class="popup-modal slider mfp-hide">
               <div class="media">
-                <img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
+                <img src="images/menubase.webp" alt="" />
               </div>
 
               <div class="description-box">
-                <h4>Shutterbug</h4>
+                <h4>Menubase</h4>
                 <p>
-                  Proin gravida nibh vel velit auctor aliquet. Aenean
-                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                  ipsum, nec sagittis sem nibh id elit.
+                  A menu analytics platform for restaurants to keep track of
+                  costs and earnings.
                 </p>
 
-                <div class="categories">Web Design</div>
+                <div
+                  class="tags flex flex-wrap justify-start svelte-fue1fc"
+                  style="margin-bottom: 0"
+                >
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    vue
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    ionic
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    graphql
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    hasura
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    postgresql
+                  </h4>
+                </div>
               </div>
 
               <div class="link-box">
-                <a href="http://www.behance.net">Details</a>
+                <a href="https://menubase.io/" target="_blank"
+                  >Link<i class="fa fa-external-link ml-1"></i
+                ></a>
                 <a href="#" class="popup-modal-dismiss">Close</a>
               </div>
             </div>
-           
 
             <div id="modal-03" class="popup-modal slider mfp-hide">
               <div class="media">
-                <img src="images/portfolio/modals/m-clouds.jpg" alt="" />
+                <img src="images/limitd.PNG" alt="" />
               </div>
 
               <div class="description-box">
-                <h4>Clouds</h4>
+                <h4>Limitd</h4>
                 <p>
-                  Proin gravida nibh vel velit auctor aliquet. Aenean
-                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                  ipsum, nec sagittis sem nibh id elit.
+                  A sneaker trading platform targetted towards the Malaysian
+                  community.
                 </p>
 
-                <div class="categories">Web Design</div>
+                <div
+                  class="tags flex flex-wrap justify-start svelte-fue1fc"
+                  style="margin-bottom: 0"
+                >
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    vue
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    tailwind
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    graphql
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    postgraphile
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    postgresql
+                  </h4>
+                </div>
               </div>
 
               <div class="link-box">
-                <a href="http://www.behance.net">Details</a>
+                <a href="https://limitd.io/" target="_blank"
+                  >Link<i class="fa fa-external-link ml-1"></i
+                ></a>
                 <a href="#" class="popup-modal-dismiss">Close</a>
               </div>
             </div>
-            
 
             <div id="modal-04" class="popup-modal slider mfp-hide">
               <div class="media">
-                <img src="images/portfolio/modals/m-beetle.jpg" alt="" />
+                <img src="images/thcwebsite.PNG" alt="" />
               </div>
 
               <div class="description-box">
-                <h4>Beetle</h4>
+                <h4>The Hacker Collective Website</h4>
                 <p>
-                  Proin gravida nibh vel velit auctor aliquet. Aenean
-                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                  ipsum, nec sagittis sem nibh id elit.
+                  The main website for The Hacker Collective, equipped with
+                  payment integration such as Stripe, PayPal, and FPX payment,
+                  and also a blog integrated with Prismic CMS for dynamic
+                  content.
                 </p>
 
-                <div class="categories">Branding</div>
+                <div
+                  class="tags flex flex-wrap justify-start svelte-fue1fc"
+                  style="margin-bottom: 0"
+                >
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    vue
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    tailwind
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    Nuxt.js
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    Prismic
+                  </h4>
+                </div>
               </div>
 
               <div class="link-box">
-                <a href="http://www.behance.net">Details</a>
+                <a href="https://hackercollective.co/" target="_blank"
+                  >Link<i class="fa fa-external-link ml-1"></i
+                ></a>
                 <a href="#" class="popup-modal-dismiss">Close</a>
               </div>
             </div>
-            
 
             <div id="modal-05" class="popup-modal slider mfp-hide">
               <div class="media">
-                <img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+                <img src="images/hangman.PNG" alt="" />
               </div>
 
               <div class="description-box">
-                <h4>Lighthouse</h4>
+                <h4>Hangman Game</h4>
                 <p>
-                  Proin gravida nibh vel velit auctor aliquet. Aenean
-                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                  ipsum, nec sagittis sem nibh id elit.
+                  A full-stack hangman game with dungeon-like theme which
+                  includes score recording, authentication and even a
+                  leaderboard!
                 </p>
 
-                <div class="categories">Web Development</div>
+                <div
+                  class="tags flex flex-wrap justify-start svelte-fue1fc"
+                  style="margin-bottom: 0"
+                >
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    vue
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    css
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    Nuxt.js
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    Node.js
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    Express
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    Firebase
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    MongoDB
+                  </h4>
+                </div>
               </div>
 
               <div class="link-box">
-                <a href="http://www.behance.net">Details</a>
+                <a
+                  href="https://serene-castle-44537.herokuapp.com/"
+                  target="_blank"
+                  >Link<i class="fa fa-external-link ml-1"></i
+                ></a>
                 <a href="#" class="popup-modal-dismiss">Close</a>
               </div>
             </div>
-            
 
             <div id="modal-06" class="popup-modal slider mfp-hide">
               <div class="media">
-                <img src="images/portfolio/modals/m-salad.jpg" alt="" />
+                <img src="images/react-crud-app.PNG" alt="" />
               </div>
 
               <div class="description-box">
-                <h4>Salad</h4>
+                <h4>React CRUD App</h4>
                 <p>
-                  Proin gravida nibh vel velit auctor aliquet. Aenean
-                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                  ipsum, nec sagittis sem nibh id elit.
+                  A simple CRUD app I built in just a day as practice while
+                  learning the React and CodeIgniter frameworks.
                 </p>
 
-                <div class="categories">Branding</div>
+                <div
+                  class="tags flex flex-wrap justify-start svelte-fue1fc"
+                  style="margin-bottom: 0"
+                >
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    react
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    bulma
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    CodeIgniter
+                  </h4>
+                  <h4
+                    class="bg-teal-600 px-2.5 py-1.5 font-bold text-xs text-white svelte-fue1fc"
+                  >
+                    MySQL
+                  </h4>
+                </div>
               </div>
 
               <div class="link-box">
-                <a href="http://www.behance.net">Details</a>
+                <a
+                  href="https://github.com/mingern789/React-Codeigniter-CRUD-App"
+                  target="_blank"
+                  >Link<i class="fa fa-external-link ml-1"></i
+                ></a>
                 <a href="#" class="popup-modal-dismiss">Close</a>
               </div>
             </div>
-            
-
-            
           </div>
-          
         </div>
-        
       </div>
-      
-    </section> -->
+    </section>
 
     <!-- /portfolio -->
 
@@ -1110,6 +1308,12 @@
             action="https://formsubmit.co/krrmol99@hotmail.com"
           >
             <fieldset>
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://mingern789.github.io/Portfolio/?form=submitted"
+              />
               <div class="form-field">
                 <input
                   name="contactName"
@@ -1282,6 +1486,17 @@
         } else {
           x.className = "topnav";
           x.style["flex-direction"] = "row";
+        }
+      }
+
+      function checkForm() {
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+          get: (searchParams, prop) => searchParams.get(prop),
+        });
+        // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
+        let value = params.form; // "some_value"
+        if(value != null){
+          alert('Message submitted!')
         }
       }
     </script>
