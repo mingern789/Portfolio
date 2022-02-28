@@ -586,7 +586,7 @@ textarea {
 		clear: both !important;
 		margin-left: 0;
 		margin-right: 0;
-		padding: 0;
+		padding: 0 10px;
 	}
 
 	[class*="col-"] + [class*="col-"].end {

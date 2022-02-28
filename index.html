@@ -1302,6 +1302,7 @@
         <div class="col-twelve">
           <!-- form -->
           <form
+            onsubmit="addSubmitHistory()"
             name="contactForm"
             id="contactForm"
             method="POST"
@@ -1495,9 +1496,14 @@
         });
         // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
         let value = params.form; // "some_value"
-        if(value != null){
-          alert('Message submitted!')
+        if(localStorage.getItem("formSubmitted") == 'true' && value != null) {
+          alert('Message submitted!');
+          localStorage.removeItem("formSubmitted");
         }
+      }
+
+      function addSubmitHistory() {
+        localStorage.setItem("formSubmitted", "true");
       }
     </script>
   </body>
